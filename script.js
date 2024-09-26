@@ -32,8 +32,9 @@ function displayBooks() {
     const book = listOfBook[currentIndex];
     document.getElementById("bookTitle").textContent = `Title: ${book.title}`;
     document.getElementById("authorName").textContent = `Aurthor: ${book.author_name[0]}`;
-    document.getElementById("nextButton").disabled = false;
+    const button = document.getElementById("nextButton");
     const referenceLink = document.getElementById("link");
+    button.style.display = "block";
     referenceLink.style.display = "inline";
    } else {
     document.getElementById("nextButton").disabled = true;
@@ -50,3 +51,7 @@ function nextBook() {
         document.getElementById("nextButton").disabled = true;
     }
 }
+
+
+//To Do: 
+//function previousBook() {}

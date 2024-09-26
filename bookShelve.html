@@ -13,21 +13,29 @@
         </div>
        
         <div id="mainBody">
-            <input type="text" id="titleInput" placeholder="Book title">
+            <input type="text" id="titleInput" placeholder="Enter a book title">
             <button onclick="searchBook()" id="searchButton">Search</button>
-            <p id="bookTitle"></p>
-            <p id="authorName"></p>
-            <button id="nextButton" disabled>Next</button>
         </div>
 
-        <div id="mainFooter">
+        <div id="details">
+            <p id="bookTitle"></p>
+            <p id="authorName"></p>
+            <button id="nextButton" style="display: none;">Next</button>
+        </div>
+
+        <div id="mainBottom">
             <p id="link" style="display: none;">
                 For availability visit
                 <a href="https://openlibrary.org">Open Library</a>
             </p>
         </div>
-        <script src="script.js"></script>
     </main>
+    <div id="footer">
+        <p>
+            Collected data are fetched from <a href="https://openlibrary.org">Open Library</a>
+        </p>
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
