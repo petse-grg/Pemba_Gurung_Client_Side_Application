@@ -11,7 +11,7 @@
         <div id="mainHeader">
             <h1>Book Shelve</h1>
         </div>
-       
+
         <div id="mainBody">
             <input type="text" id="titleInput" placeholder="Enter a book title">
             <button onclick="searchBook()" id="searchButton">Search</button>
@@ -20,7 +20,11 @@
         <div id="details">
             <p id="bookTitle"></p>
             <p id="authorName"></p>
-            <button id="nextButton" style="display: none;">Next</button>
+            <img src="" alt="book cover" id="bookCover" style="display: none;">
+            <div class="inline">
+                <button id="previousButton" style="display: none;">Prev</button>
+                <button id="nextButton" style="display: none;">Next</button>
+            </div>
         </div>
 
         <div id="mainBottom">
@@ -32,7 +36,7 @@
     </main>
     <div id="footer">
         <p>
-            Collected data are fetched from <a href="https://openlibrary.org">Open Library</a>
+            Collected data are fetched from <a href="https://openlibrary.org">Open Library</a> archive
         </p>
     </div>
     <script src="script.js"></script>
